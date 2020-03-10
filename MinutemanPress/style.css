@@ -398,7 +398,7 @@ footer address{
         max-width: 100%;
     }
 
-
+}
 
 /* Mobile View */
 @media screen and (max-width: 480px){
@@ -417,7 +417,6 @@ footer address{
         flex-direction: column;
         flex-wrap: wrap;
     }
-    #sector-household
 }
 @media screen and (max-width:320px){
     .header-cta{
