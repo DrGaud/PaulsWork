@@ -1,0 +1,390 @@
+/* 
+    StyleSheet for Minute Man Pres - This is in development. 
+ */
+
+/* Global Styles */
+*,
+:before,
+::after{
+    /* StyleSheet Resets */
+    box-sizing: border-box;
+    background-origin: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    /* border: 1px dashed red; */
+}
+:root{
+    /* Declaring Variables here */
+    /* Sit Colors */
+    --mmGreen:#007756;
+    --mmOrange:#f27710;
+    --mmGreenLinear:linear-gradient(180deg, rgba(0,119,86,1) 24%, rgb(16, 143, 107) 50%, rgba(0,119,86,1) 74%); /*fallback is : rgb(0,119,86)*/
+    --mmOrangeLinear: linear-gradient(180deg, rgba(129,60,3,1) 8%, rgba(209,109,27,1) 35%, rgba(242,119,16,1) 50%, rgba(209,109,27,1) 78%, rgba(129,60,3,1) 95%);/*fallback is rgb(129,60,3)*/
+
+    --curvy:25px;
+
+
+
+    /* Variables for the inputs */
+    
+
+   
+   
+   
+    /* Declaring root Styles here */
+    width: 100vw;
+    height:100vh;
+    overflow-x: hidden;
+    word-break: keep-all;
+    
+
+    
+}
+
+/* Typography Styles */
+
+html{
+        /* Fluid Typography */
+       font-size: calc(0.75em + 1vw);
+       font-family: 'Nunito', sans-serif;
+}
+h1{
+    font-family: 'Lato',sans-serif;
+    font-size: 2em ;
+}
+h2{
+    font-size: 1.75em;
+}
+p{
+    font-size: 0.75em;
+    line-height: calc(1.5em + (1.7 - 1.4) * ((100vw - 21em)/(100 - 50)));
+}
+a{
+    /* Removes the underline in links */
+    text-decoration: none;
+}
+/* Class Styles */
+
+/* Styling the Header */
+.header{
+    /* Setting up the Flexbox */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    
+    
+    width:100vw;
+    margin-bottom: 0.5em;
+}
+.header img{
+    display:block;
+    width: fit-content;
+}
+.header-textbox{
+    text-align: center;
+    width: fit-content;
+    color:#007756;
+}
+.header-textbox h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.header-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: max-content;
+    margin: 0;
+}
+.header-cta button{
+    background-color:var(--mmOrange);
+    color: var(--mmGreen);
+    padding: 0.25rem;
+    margin: 0.25em;
+    font-size: calc(0.95em + 0.5vw);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header-cta a{
+    text-decoration: none;
+    color: var(--mmGreen);
+}
+
+/* Styling the Nav Bar */
+.nav-bar{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ 
+ 
+    flex-shrink: 1;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    list-style-position: inside;
+
+}
+.nav-item{
+    display: block;
+    background: var(--mmGreenLinear);
+    min-width: 25%;
+    padding:0.25rem;
+    cursor: pointer;
+    border-radius:10px;
+    margin: auto 0.09em;
+
+}
+.nav-item--text{
+
+    text-align: center;
+    color: ghostwhite;
+}
+
+/* Styling the Main Body */
+.main{
+    /* setting upt the Grid */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    margin:auto;    
+    width:90%;
+}
+.active{
+    display: block;
+   
+}
+.hidden{
+    /* This Class is to be used to hide content off the screen but not from the screen readers */
+    position: absolute;
+    left:-1000000px; /* Moving the pixels as far off the screen as possible*/
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow: hidden;
+}
+
+.gallery-window{
+    grid-area: gallery-window;
+}
+.ctaBanner{
+    grid-area: ctaBanner;
+}
+
+/* Styling the Gallery */
+
+.heroImg{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styling the CTA Banner */
+.cta-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+.banner-listBody{
+    background: var(--mmGreen);
+    color: ghostwhite;
+    width: 100%;
+    /* Setting up the MultiColumn */
+    column-count: 4;
+    column-width: 100px;
+    margin-bottom:0.25em;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.banner-footer{
+    background: var(--mmOrange);
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: larger;
+    text-align: right;
+    width: 100%;
+    flex-direction:row;
+   
+}
+.banner-footer p {
+    margin:0;
+    padding-right:15px;
+}
+/* Styling the Section components */
+/* #about{
+    position: absolute;
+    left:-10000000px;
+
+} */
+
+
+
+/* Styling the Contact Form */
+/* Input reset */
+#contact .text-container{}
+
+
+.form{
+    /* display:flex;
+    flex-direction: column; */
+    margin:1em 0 1em 0 ;
+    width:100%;
+}
+
+.form-bubble{
+    display: flex;    
+    margin:0.5em;
+    height:fit-content;
+    /* border:1px solid red; */
+}
+.form-title{
+    flex:1 1 auto;
+    width: 100%;
+}
+.sector{
+    flex-direction: row;
+    flex: 1 1 auto;
+    width: fit-content;
+    align-items: center;
+}
+.dropdown label{
+    width: fit-content;
+}
+.name{
+    flex-direction: column;
+}
+.address{
+    flex-direction: column;
+}
+input{
+    /* display:inline; */
+    flex: 1 1 auto;
+    /* width:%; */
+
+    
+    border:2px solid var(--mmOrange);
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    line-height: 2em;
+    outline-color: var(--mmOrange);
+
+    /* Clears the Browser Default Styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0.5em;
+}
+label{
+    display:inline-flexbox;
+    /* border:2px solid blue; */
+   
+}
+/* Styling the Checkboxes */
+input[type="checkbox"]{
+    display:inline-block;
+    position: relative;
+    width:1.5em;
+    height:1.5em;
+    border: 2px solid var(--mmOrange);
+    vertical-align:bottom;
+    /* This is a Fallback for Windows High Contrast mode */
+    color:var(--mmOrange);
+}
+input[type="checkbox"]::before{
+    content: "\00d7";  /* This is the unicode for 'X'*/ 
+
+    position: absolute;
+    top:-0.125em;
+    left: -0.05em;
+    font-size:2.75em;
+    /* This hides it when not checked */
+    visibility: hidden;
+}
+input[type="checkbox"]:checked::before{
+    /* This is the visability toggle - visabilkity is used to prevent a reprint of the layout when selected */
+    visibility: visible;
+}
+input[type="checkbox"]:disabled{
+    border-color: ;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    background: var(--mmGreen);
+    color: ghostwhite;
+    width:100vw;
+    height:5rem;
+    margin-top:1.5em;
+    
+}
+footer address{
+    width:fit-content;
+    margin:auto;
+    margin-top:0.5em;
+    vertical-align: bottom;
+    text-align: center;
+    
+}
+
+
+
+/* Media Queries */
+
+
+/* This fixed the midway behaviour of certain elements */
+@media screen and (max-width:760px){
+    /* Sorting out the direction of the buttons on mobile screens */
+    .header-cta{
+        flex-direction: row;
+    }
+    .section{
+        max-width: 100%;
+    }
+
+
+
+/* Mobile View */
+@media screen and (max-width: 480px){
+    .header{
+        flex-direction: column;
+    }
+    .header-cta{
+        /* flex-direction: column !important; */
+        margin: auto;
+    }
+    .header-cta button{
+        padding: 1rem;
+ 
+    }
+    .sector{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #sector-household
+}
+@media screen and (max-width:320px){
+    .header-cta{
+        flex-direction: column;
+    }
+}
