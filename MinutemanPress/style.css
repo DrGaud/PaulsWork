@@ -59,7 +59,8 @@ h2{
 }
 p{
     font-size: 0.75em;
-    line-height: calc(1.2em + (1.7 - 1.4) * ((100vw - 21em)/(100 - 50)));
+    line-height: calc(1.4em + (1.7 - 1.4) * ((100vw - 21em)/(100 - 50)));
+    margin-bottom:0.1em;
 }
 a{
     /* Removes the underline in links */
