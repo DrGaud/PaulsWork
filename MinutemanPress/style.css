@@ -42,6 +42,8 @@
 }
 
 /* Typography Styles */
+/* Importing Fontstyles from google: Lato & Nunito */
+@import url('//fonts.googleapis.com/css?family=Lato|Nunito&display=swap');
 
 html{
         /* Fluid Typography */
