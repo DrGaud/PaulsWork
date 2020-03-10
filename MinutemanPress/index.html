@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap" rel="stylesheet">
+    
+    <title> Minuteman Press Kilmarnock - Single Page</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/imgs/Miniuteman-logo.svg" alt="Miniuteman-logo" class="header-img">
+        <div class="header-textbox">
+            <h1>
+                Minuteman <br>Press <sub style="font-size: 0.5em;">&reg;</sub>
+            </h1>
+            <p style="margin: 0;"><span style="color: var(--mmOrange);">The First &amp; Last Step In</span><span style="color:var(--mmGreen);"> Printing</span>
+            </p>
+        </div>
+        <div class="header-cta">
+            <button class="cta-telephone">&#128222;<a href="tel:+44 01563 550750">01563 550 750</a></button>
+            <button>&commat;<a href="mailto:email@minutemanpress.co.uk">Email Us</a></button>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <!-- [Hamburger Menu] -->
+        <!-- <label for="burger">&equiv;</label>
+            <input type="checkbox"  id="burger"> -->
+            <!-- Menu Items List -->
+            <!-- TODO:Sort out the color contrasting issue with the style of these links -->
+            <ul class="nav-list">
+                <li class="nav-item nav-item--text"><a href="#about" id="aboutLink">About Us</a></li>
+                <li class="nav-item nav-item--text special"><a href="#products" id="prodLink">Products & Services</a></li>
+                <li class="nav-item nav-item--text"><a href="#contact" id="contactLink">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="heroContainer">
+            <!-- This is where the galelry would go -->
+            <img src="assets/imgs/mmp_mainimg1.jpg" 
+            alt=""
+            class="heroImg">
+        </div>
+        <main class="main">
+                <!-- This is where the content will be displayed -->
+                <section class="section hidden" id="about" data-active="true">
+                    <a href=""></a>
+                    <div class="text-container">
+                        <h1>
+                             Minuteman Printers
+                            </h1>
+                            <p>
+                            At  Minuteman Press we offer a full range of products for the Kilmarnock, Irvine and Largs areas. We can print anything from a business card to a banner.
+                        </p>
+                        <p>
+                            There is a talented in house designer so all your ideas can be translated into something that you would be proud to own and send to friends or business associates.
+                        </p>
+                        <p>
+                            Our most popular products are business cards, letterheads, invitations for weddings and birthdays, orders of service for weddings and funerals, leaflets, menus, etc.
+                        </p>
+                        <p>
+                            We can print posters from A4 size up to A0 on a variety of paper types. We can print architect's drawings up to A1 same day. 
+                        </p>
+                    </div>
+                </section>
+                <section class="section hidden " id="products" data-active=false> 
+                    <div class="text-container">
+                        <h2>
+                            Products & Services
+                        </h2>
+                        <p>
+                            We use state of the art digital printing equipment, professional graphic design, complete Bindery, Poster and Banner equipment. Offering you true quality and service that can only come from our years of experience.
+                        </p>
+                        <p>
+                            Our products include brochures, business cards, envelopes, business forms, flyers, invitations, labels, letterheads, newsletters, postcards and presentation folders. We also offer posters and banners custom made to fit our customer’s needs.
+                        </p>
+                        <p>
+                            We work with everyone from companies, schools, municipalities, churches, organisations to individuals.
+                        </p>
+                        <p>
+                            Our products include brochures, business cards, envelopes, business forms, flyers, invitations, labels, letterheads, newsletters, postcards and presentation folders. We also offer posters and banners custom made to fit our customer’s needs.
+        
+                        </p>
+                        <p>
+                             Minuteman Press of Kilmarnock is actively involved in our local community. We support local schools, churches, non-profits and sports teams and are active members of the local Business Referral Network.
+                        </p>
+                    </div>
+                </section>
+                <section class="section hidden " id="contact" data-active="false">
+                    <div class="text-container">
+                        <h2>Send us a message</h2>
+                        <p>Fill in the contact form below, and we will be in touch to discuss it further.</p>
+                    </div>
+                 <form action="" method="post" class="form">
+                     <!--Checkboxes for sector  -->
+                    <div class="form-bubble sector">
+                        <div class="sectorWrapper"><label for="sector-title">Sector</label>
+                        <label for="sector-household">Household</label> <input type="checkbox" name="sector-household" id="sector-household">
+                        
+                        <label for="sector-business">Business</label>
+                        <input type="checkbox" name="sector-business" id=""></div>
+                        <div class="form-bubble dropdown">
+                           <label for="dropdown">Select Enquiry</label>
+                               <select name="dropdown" id="dropdown">
+                               <option value="">--Please Choose an Option</option>
+                               <option value="General Enquiry"> General Enquiry</option>
+                               <option value="Business Cards">Business Cards</option>
+                               <option value="Stationery">Stationery</option>
+                               <option value="Flyers">Flyers</option>
+                               <option value="Folded Leaflets">Folded Leaflets</option>
+                               <option value="Brochures Booklets">Brochures &amp; Booklets</option>
+                               <option value="Presentation Folders">Presentation Folders &amp; Inserts</option>
+                               <option value="Calenders">Calenders &amp; Diaries</option>
+                               <option value="Postcards">Postcards &amp; Mailing Services</option>
+                               <option value="Promo Product">Promotional Products</option>
+                               <option value="Label Stickers">Labels &amp; Stickers</option>
+                               <option value="Catalogues Reports">Catalogies &amp; Reports</option>
+                               <option value="Cards Invitation">Cards &amp; Invitations</option>
+                               <option value="Menus">Menus &amp; Tent Cards</option>
+                               <option value="Posters">Posters &amp; Banners</option>
+                               <option value="Plaques Awards">Plaques &amp; Awards</option>
+                               <option value="Binders Tabs">Binders &amp; Tabs</option>
+                               <option value="Raffle Ticket">Raffle Tickets</option>
+                               <option value="Custom Stamps">Custom Stamps</option>
+                               <option value="Door Hangers">Door Hangers</option>
+                               <option value="Business Forms">Business Forms</option>
+                               <option value="Other">Other</option>
+                               <!-- If the other is selected then it should show a text input -->
+                                </select>
+                       </div>
+                    </div>
+                     <!-- Dropdown List -->
+                    <div class="form-bubble name">
+                        <label for="name">Full Name:</label> <input type="text" name="name" id="" required>
+                        <label for="email">Email:</label> <input type="email" name="email" id="" required>
+                        <label for="telephone">Telephone:</label> <input type="tel" name="telephone" id="" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required size="11" maxlength="11"><!--TODO: Sort out this regex -->
+                    </div>
+                    <div class="form-bubble address">
+                        <h3 class="form-title" >Address:</h3>
+                        <span class="break"></span>
+                        <label for="street">First Line: </label>
+                        <input type="text" name="street" id="">
+                        <label for="town">Town: </label> <input type="text" name="town" id="">
+                        <label for="Post Code">Post Code: </label> <input type="text" name="Post Code" id=""> <!--TODO: Workout he Regex for the Post Code Pattern AA11 1ZZ or A11 1AA or A1 1AA-->
+                        
+                    </div>
+                    <div class="form-bubble subject">
+                        <label for="subject">Subject: </label><input type="text" name="subject" id="">
+                       <label for="message">Message:</label><textarea  name="message" id=""></textarea>
+                    </div>
+                    <div class="form-bubble send">
+                        <label for="submit"></label>
+                        <input type="submit" value="Send Message">
+                    </div>
+                    <div class="form-bubble">
+                        <!-- This is a test input -->
+                        <label for="test" class="field field-a field-b">
+                            <input type="text" name="test" id="test" placeholder="PLACEHOLDER TEXT" class="input input-a">
+                            <span class="label-warp">
+                                <span class="label-field">
+                                    LABEL GOES HERE
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                 </form>
+                </section>
+        
+                <!-- This is where a gallery would be displayed -->
+                
+                <section class="ctaBanner">
+                    <div class="cta-banner">
+                        <ul class="banner-listBody">
+                            <li>Notepads</li>
+                            <li>Graphic Design</li>
+                            <li>Booklets</li>
+                            <li>Forms</li>
+                            <li>Binding</li>
+                            <li>Lamination</li>
+                            <li>Invitations</li>
+    
+                            <li>Brochures</li>
+                            <li>Flyers</li>
+                            <li>Tickets</li>
+                            <li>Posters & Banners</li>
+                            <li>Digital Printing</li>
+                            <li>Postcards</li>
+                            <li>Labels & Stickers</li>
+    
+                            <li>Price Lists</li>
+                            <li>Greeting Cards</li>
+                            <li>Newsletters</li>
+                            <li>Promotional Items</li>
+                            <li>Menus & Tent Cards</li>
+                            <li>Invoices</li>
+                            <li>Presentation</li>
+    
+                            <li>Rubber Stamps</li>
+                            <li>Stationary</li>
+                            <li>Business Cards</li>
+                            <li>Letterheads</li>
+                            <li>Door Hangers</li>
+                            <li>Calenders & Diaries</li>
+                            <li>Catalogues & Reports</li>
+                        </ul>
+                        <div class="break"></div><!--Break in the FlexBox-->
+                        <div class="banner-footer">
+                            <p>&plus; MUCH MUCH MORE !</p>
+                        </div>
+                    </div>
+                </section>
+            
+        </main>
+
+    <footer>
+        <address>2-4 Old Mill St. Kilmarnock KA1 3AN</address>
+
+    </footer>
+</body>
+<script src="assets/script.js"></script>
+<!-- <script src="assets/test_script.js"></script> -->
+</html>
