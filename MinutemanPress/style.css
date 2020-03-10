@@ -55,12 +55,14 @@ h1{
     font-size: 2em ;
 }
 h2{
+    font-family: 'Lato',sans-serif;
     font-size: 1.75em;
 }
 p{
+    /* font-family: 'Nunito', Arial, Helvetica, sans-serif; */
     font-size: 0.75em;
     line-height: calc(1.4em + (1.7 - 1.4) * ((100vw - 21em)/(100 - 50)));
-    margin-bottom:0.1em;
+    margin-bottom:0.3em;
 }
 a{
     /* Removes the underline in links */
@@ -243,42 +245,72 @@ a{
 
 
 .form{
-    /* display:flex;
-    flex-direction: column; */
-    margin:1em 0 1em 0 ;
-    width:100%;
+    display:flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    flex-grow: 1;
+    flex-wrap: wrap;
+    /* margin:1em 0 1em 0 ; */
+    /* width:100%; */
 }
 
 .form-bubble{
-    display: flex;    
     margin:0.5em;
-    height:fit-content;
-    /* border:1px solid red; */
+    /* height:auto; */
+    border:1px solid red;
+    padding:0.5em;
+    width:fit-content;    
 }
-.form-title{
+/* .form-title{
     flex:1 1 auto;
     width: 100%;
-}
-.sector{
-    flex-direction: row;
-    flex: 1 1 auto;
-    width: fit-content;
-    align-items: center;
-}
-.dropdown label{
-    width: fit-content;
-}
-.name{
+} */
+.personal {
     flex-direction: column;
+    width:50vw;
+    
+}
+.personal input{
+    margin:auto;
+}
+.dropdown select{
+    font-size: 18px;
+    height:2em;
+    outline-color: var(--mmOrange);
+    border-color: var(--mmOrange);
 }
 .address{
     flex-direction: column;
+    width: 50vw;
 }
-input{
-    /* display:inline; */
-    flex: 1 1 auto;
-    /* width:%; */
+.address input{
+    margin:auto;
+}
+.message{
+    width: 50vw;
+}
+.message input{
+    margin:auto;
+}
+.message textarea{
+    display: block;
+    width: 50vw;
+    height: 10vh;
+    margin: auto;
+}
+.send{
+    width:50vw;
+}
+.send input{
+    margin:auto;
+    border-radius: var(--curvy);
+    background-color: transparent;
+    color:var(--mmGreen)
+}
 
+input{
+    display: block;
+    width: 50ch;
     
     border:2px solid var(--mmOrange);
 
@@ -286,16 +318,16 @@ input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75em;
     line-height: 2em;
-    outline-color: var(--mmOrange);
+    outline-color: var(--mmGreen);
 
     /* Clears the Browser Default Styles */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0.5em;
+    /* margin: 0.5em; */
 }
 label{
-    display:inline-flexbox;
+    /* display:inline-flexbox; */
     /* border:2px solid blue; */
    
 }
@@ -324,9 +356,10 @@ input[type="checkbox"]:checked::before{
     /* This is the visability toggle - visabilkity is used to prevent a reprint of the layout when selected */
     visibility: visible;
 }
+/*
 input[type="checkbox"]:disabled{
     border-color: ;
-}
+} */
 
 
 
@@ -390,4 +423,5 @@ footer address{
     .header-cta{
         flex-direction: column;
     }
+
 }

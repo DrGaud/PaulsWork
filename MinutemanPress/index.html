@@ -7,7 +7,6 @@
     <meta name="description" content="SEO CONTENT WOULD GO HERE">
     <!-- <link rel="stylesheet" href="https://github.com/DrGaud/PaulsWork/blob/ec05f9f33178e083a2b1b024dd477e10d6089aad/MinutemanPress/style.css" > -->
     
-    <!-- <link rel="stylesheet" href="MinutemanPress\style.css"> -->
     <link rel="stylesheet" href="style.css">
     <!-- Importing Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap" rel="stylesheet"> -->
@@ -42,7 +41,7 @@
             </ul>
         </nav>
         <div class="heroContainer">
-            <!-- This is where the galelry would go -->
+            <!-- This is where the gallery would go -->
             <img src="assets/imgs/mmp_mainimg1.jpg" 
             alt=""
             class="heroImg">
@@ -99,47 +98,59 @@
                  <form action="" method="post" class="form">
                      <!--Checkboxes for sector  -->
                     <div class="form-bubble sector">
-                        <div class="sectorWrapper"><label for="sector-title">Sector</label>
-                        <label for="sector-household">Household</label> <input type="checkbox" name="sector-household" id="sector-household" aria-label="Household Checkbox">
+                        <div class="sectorWrapper">
+                            <h3 for="sector-title">Sector</h3>
+                            <label for="sector-household">Household</label> <input type="checkbox" name="sector-household" id="sector-household" aria-label="Household Checkbox">
                         
-                        <label for="sector-business">Business</label>
-                        <input type="checkbox" name="sector-business" id="" aria-label="Business Checkbox"></div>
-                        <div class="form-bubble dropdown">
-                           <label for="dropdown">Select Enquiry</label>
-                               <select name="dropdown" id="dropdown" multiple aria-label="Select Enquiry" aria-multiselectable="true">
-                               <option value="">--Please Choose an Option</option>
-                               <option value="General Enquiry"> General Enquiry</option>
-                               <option value="Business Cards">Business Cards</option>
-                               <option value="Stationery">Stationery</option>
-                               <option value="Flyers">Flyers</option>
-                               <option value="Folded Leaflets">Folded Leaflets</option>
-                               <option value="Brochures Booklets">Brochures &amp; Booklets</option>
-                               <option value="Presentation Folders">Presentation Folders &amp; Inserts</option>
-                               <option value="Calenders">Calenders &amp; Diaries</option>
-                               <option value="Postcards">Postcards &amp; Mailing Services</option>
-                               <option value="Promo Product">Promotional Products</option>
-                               <option value="Label Stickers">Labels &amp; Stickers</option>
-                               <option value="Catalogues Reports">Catalogies &amp; Reports</option>
-                               <option value="Cards Invitation">Cards &amp; Invitations</option>
-                               <option value="Menus">Menus &amp; Tent Cards</option>
-                               <option value="Posters">Posters &amp; Banners</option>
-                               <option value="Plaques Awards">Plaques &amp; Awards</option>
-                               <option value="Binders Tabs">Binders &amp; Tabs</option>
-                               <option value="Raffle Ticket">Raffle Tickets</option>
-                               <option value="Custom Stamps">Custom Stamps</option>
-                               <option value="Door Hangers">Door Hangers</option>
-                               <option value="Business Forms">Business Forms</option>
-                               <option value="Other">Other</option>
-                               <!-- If the other is selected then it should show a text input -->
-                                </select>
-                       </div>
+                            <label for="sector-business">Business</label>
+                            <input type="checkbox" name="sector-business" id="" aria-label="Business Checkbox">
+                        </div>
                     </div>
-                     <!-- Dropdown List -->
-                    <div class="form-bubble name">
-                        <label for="name">Full Name:</label> <input type="text" name="name" id="" required aria-label="Full Name">
-                        <label for="email">Email:</label> <input type="email" name="email" id="" required aria-label="Email">
-                        <label for="telephone">Telephone:</label> <input type="tel" name="telephone" id="" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required size="11" maxlength="11" aria-label="Telehone"><!--TODO: Sort out this regex -->
+                    
+                    <div class="form-bubble">
+                            <div class="dropdown">
+                            <label for="dropdown">Select Enquiry</label>
+                            <select name="dropdown" id="dropdown" aria-label="Select Enquiry" >
+                                <option value="">--Please Choose an Option</option>
+                                <option value="General Enquiry"> General Enquiry</option>
+                                <option value="Business Cards">Business Cards</option>
+                                <option value="Stationery">Stationery</option>
+                                <option value="Flyers">Flyers</option>
+                                <option value="Folded Leaflets">Folded Leaflets</option>
+                                <option value="Brochures Booklets">Brochures &amp; Booklets</option>
+                                <option value="Presentation Folders">Presentation Folders &amp; Inserts</option>
+                                <option value="Calenders">Calenders &amp; Diaries</option>
+                                <option value="Postcards">Postcards &amp; Mailing Services</option>
+                                <option value="Promo Product">Promotional Products</option>
+                                <option value="Label Stickers">Labels &amp; Stickers</option>
+                                <option value="Catalogues Reports">Catalogues &amp; Reports</option>
+                                <option value="Cards Invitation">Cards &amp; Invitations</option>
+                                <option value="Menus">Menus &amp; Tent Cards</option>
+                                <option value="Posters">Posters &amp; Banners</option>
+                                <option value="Plaques Awards">Plaques &amp; Awards</option>
+                                <option value="Binders Tabs">Binders &amp; Tabs</option>
+                                <option value="Raffle Ticket">Raffle Tickets</option>
+                                <option value="Custom Stamps">Custom Stamps</option>
+                                <option value="Door Hangers">Door Hangers</option>
+                                <option value="Business Forms">Business Forms</option>
+                                <option value="Other">Other</option>
+                            <!-- If the other is selected then it should show a text input -->
+                            </select>
+                        </div>
                     </div>
+                    <div class="break"></div>
+                     
+                    <div class="form-bubble">
+                        <div class="personal">
+                            <label for="name">Full Name:</label> 
+                            <input type="text" name="name" id="" required aria-label="Full Name">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="" required aria-label="Email">
+                            <label for="telephone">Telephone:</label> 
+                            <input type="tel" name="telephone" id="" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required size="11" maxlength="11" aria-label="Telephone"><!--TODO: Sort out this regex -->
+                        </div>
+                    </div>
+                    <div class="break"></div>
                     <div class="form-bubble address">
                         <h3 class="form-title" >Address:</h3>
                         <span class="break"></span>
@@ -149,25 +160,22 @@
                         <label for="Post Code">Post Code: </label> <input type="text" name="Post Code" id="" aria-label="Post Code"> <!--TODO: Workout he Regex for the Post Code Pattern AA11 1ZZ or A11 1AA or A1 1AA-->
                         
                     </div>
-                    <div class="form-bubble subject">
-                        <label for="subject">Subject: </label><input type="text" name="subject" id="subject"aria-label="subject">
-                       <label for="message">Message:</label><textarea  name="message" id="message" aria-label="Message"></textarea>
-                    </div>
-                    <div class="form-bubble send">
-                        <label for="submit"></label>
-                        <input type="submit" value="Send Message">
-                    </div>
+                    <div class="break"></div>
                     <div class="form-bubble">
-                        <!-- This is a test input -->
-                        <label for="test" class="field field-a field-b">
-                            <input type="text" name="test" id="test" placeholder="PLACEHOLDER TEXT" class="input input-a">
-                            <span class="label-warp">
-                                <span class="label-field">
-                                    LABEL GOES HERE
-                                </span>
-                            </span>
-                        </label>
+                        <div class="message">
+                            <label for="subject">Subject: </label>
+                            <input type="text" name="subject" id="subject"aria-label="subject">
+                            <label for="message">Message:</label>
+                            <textarea  name="message" id="message" aria-label="Message"></textarea></div>
+                        </div>
+                    <div class="break"></div>
+                    <div class="form-bubble">
+                        <div class="send">
+                            <label for="submit"></label>
+                            <input type="submit" value="Send Message">
+                        </div>
                     </div>
+                  
                  </form>
                 </section>
         

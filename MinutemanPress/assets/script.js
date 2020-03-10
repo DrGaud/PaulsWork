@@ -4,7 +4,7 @@ console.log("The script has successfully been loaded");
 
 /**
  * This function will look to update the content of the section window 
- * When the anchor links are selected. It will bring in the relevent content
+ * When the anchor links are selected. It will bring in the relevant content
  */
 
  //Declaring the variables
