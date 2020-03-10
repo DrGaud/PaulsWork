@@ -353,7 +353,7 @@ input[type="checkbox"]::before{
     visibility: hidden;
 }
 input[type="checkbox"]:checked::before{
-    /* This is the visability toggle - visabilkity is used to prevent a reprint of the layout when selected */
+    /* This is the visibility toggle - visibility is used to prevent a reprint of the layout when selected */
     visibility: visible;
 }
 /*
