@@ -63,7 +63,9 @@ p{
     font-size: 0.75em;
     line-height: calc(1.4em + (1.7 - 1.4) * ((100vw - 21em)/(100 - 50)));
     margin-bottom:0.3em;
+    padding:0.1em;
 }
+
 a{
     /* Removes the underline in links */
     text-decoration: none;
@@ -149,15 +151,32 @@ a{
     margin: auto 0.09em;
 
 }
+.nav-item a:link{
+    color:red;
+}
+.nav-item:hover{
+    background-color: gold;
+    color:gold;
+}
+.nav-item a:active{
+    color:pink;
+}
+.nav-item a:visited{
+    color:ghostwhite;
+}
 .nav-item--text{
 
     text-align: center;
     color: ghostwhite;
 }
 
+
+
+
+
 /* Styling the Main Body */
 .main{
-    /* setting upt the Grid */
+    /* setting up the FlexBox on the main Container */
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -177,13 +196,6 @@ a{
     width:1px;
     height:1px;
     overflow: hidden;
-}
-
-.gallery-window{
-    grid-area: gallery-window;
-}
-.ctaBanner{
-    grid-area: ctaBanner;
 }
 
 /* Styling the Gallery */
@@ -210,7 +222,12 @@ a{
     color: ghostwhite;
     width: 100%;
     /* Setting up the MultiColumn */
+    /* Applying the autoprefixers here */
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-count: 4;
+    -moz-column-width:100px;
+    -webkit-column-width: 100px;
     column-width: 100px;
     margin-bottom:0.25em;
     padding-top:10px;
@@ -310,7 +327,7 @@ a{
 
 input{
     display: block;
-    width: 50ch;
+    width: 50%;
     
     border:2px solid var(--mmOrange);
 
@@ -382,8 +399,13 @@ footer address{
     text-align: center;
     
 }
+/* Psuedo's Go Here */
+::selection{
+    background-color:var(--mmGreen);
+    color:ghostwhite;
+}
 
-
+/* Styling the links behaviour */
 
 /* Media Queries */
 
